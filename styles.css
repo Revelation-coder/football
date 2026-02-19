@@ -1,0 +1,180 @@
+/*
+ * Main stylesheet for the football club portfolio.
+ * This file defines the look and feel of the site including typography,
+ * layout grids, cards, buttons and section spacing. Feel free to
+ * customise colours, font sizes and spacing variables to better suit
+ * your brand.
+ */
+
+/* Reset some defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #ffffff;
+}
+
+/* Containers wrap content and apply a max width */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero styles */
+.hero {
+  background: linear-gradient(135deg, #1b1b3a 0%, #2a2a65 100%);
+  color: #ffffff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.btn.primary {
+  background: #ff6f61;
+  color: #ffffff;
+}
+
+.btn.primary:hover {
+  background: #e85d50;
+}
+
+/* Sections */
+.section {
+  padding: 60px 0;
+}
+
+.section.light {
+  background: #f7f7f7;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Grid layout for cards */
+.grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Card component */
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.card h3,
+.card h4 {
+  margin-bottom: 10px;
+  color: #1b1b3a;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Testimonials styling */
+.testimonial {
+  text-align: center;
+  padding: 30px 20px;
+  font-style: italic;
+}
+
+.testimonial strong {
+  display: block;
+  margin-top: 15px;
+  font-style: normal;
+  color: #333333;
+}
+
+/* Process list styles */
+.process-list {
+  list-style: none;
+  max-width: 700px;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.process-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.process-list li::before {
+  content: "\2022";
+  color: #ff6f61;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.5rem;
+  line-height: 1rem;
+}
+
+/* Contact section */
+#contact p {
+  margin: 10px 0;
+  font-size: 1rem;
+  text-align: center;
+}
+
+#contact a {
+  color: #1b1b3a;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer styles */
+.footer {
+  background: #1b1b3a;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
